@@ -1,0 +1,7 @@
+apple: 사과
+fruit: 과일
+computer: 컴퓨터
+horse: 말
+lion: 사자
+tiger: 호랑이
+
