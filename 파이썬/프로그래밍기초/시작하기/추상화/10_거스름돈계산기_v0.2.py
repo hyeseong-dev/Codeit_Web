@@ -16,4 +16,4 @@ def calculate_change(payment, cost):
 # 테스트
 calculate_change(100000, 33000)
 print()
-calculate_change(500000, 378000)
+# calculate_change(500000, 378000)
