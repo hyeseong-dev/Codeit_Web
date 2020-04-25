@@ -35,7 +35,7 @@ class User:
         """user.txt파일이 있으면 넘기고 없으면 만드는 함수"""
         if 'user.txt' not in os.listdir(os.getcwd()):
             with open("user.txt", 'w', encoding='UTF8') as f:
-                f.write('\n\n\n')
+                f.write('/n/n/n')
 
     def read_users(self):
         self._ids = self.user_id
@@ -65,8 +65,8 @@ class User:
 
     def save(self):
         with open('user.txt', 'w', encoding='UTF-8') as f:
-            f.write("|".join(self._ids) + "\n")
-            f.write("|".join(self._pws) + "\n")
+            f.write("|".join(self._ids) + "/n")
+            f.write("|".join(self._pws) + "/n")
 
     def check_pw(self, i, p):
         """id와 pw를 받아 동일한 위치에 i, p가 있는지 확인하는 함수"""
@@ -90,7 +90,7 @@ class Info:
     def set_info_space():   # 새로운 계정이 만들어졌을 때에만 사용된다.
         """새로 계정을 생성할 때 마다 info.txt 끝에 두 줄의 정보 공간을 추가한다."""
         with open('info.txt', 'a', encoding='UTF8') as f:
-            f.write("||\n||\n")
+            f.write("||/n||/n")
 
     def get_memos(self):
         return self._memos
@@ -112,8 +112,8 @@ class Info:
         """유저 정보에 해당되는 줄에 info.txt를 기록하는 함수"""
         with open('info.txt', 'r', encoding='UTF8') as f:
             sf = f.readlines()
-            sf[self.index*2] = "|".join(self._pws) + "\n"
-            sf[(self.index*2)+1] = "|".join(self._memos) + "\n"
+            sf[self.index*2] = "|".join(self._pws) + "/n"
+            sf[(self.index*2)+1] = "|".join(self._memos) + "/n"
         with open('info.txt', 'w', encoding='UTF8') as f:
             f.writelines(sf)
 
@@ -167,7 +167,7 @@ class Tool:
         b_alpha = [chr(x) for x in range(ord('A'), ord('Z')+1)]
         number = [str(i) for i in range(0, 9+1)]
         special = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':',
-                   ';', '<', '=', '>', '?', '@', '[', '＼', ']', '^', '_', '`', '{', '}', '~', '\'']  # 구분자로 '|'를 사용해서, 제외.
+                   ';', '<', '=', '>', '?', '@', '[', '＼', ']', '^', '_', '`', '{', '}', '~', '/'']  # 구분자로 '|'를 사용해서, 제외.
         return "".join(random.sample(s_alpha*sa+b_alpha*ba+number*n+special*s, int(i)))
 
 

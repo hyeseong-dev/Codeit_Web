@@ -11,5 +11,5 @@
 
 #마지막 예시 
 
-some_string = '              absd                sdfjk \n           asdf             asdf \n  dffffff'
+some_string = '              absd                sdfjk /n           asdf             asdf /n  dffffff'
 print(some_string.split()) # 파라미터가 없으면 모두 단어로만 리스트화 됨.

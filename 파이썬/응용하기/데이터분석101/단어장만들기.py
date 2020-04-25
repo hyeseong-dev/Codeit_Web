@@ -10,7 +10,7 @@ while f:
     # lambda : eng : break if 'q' == eng
     if 'p' == kor:
         break
-    f.write(f'{eng}: {kor}\n')
+    f.write(f'{eng}: {kor}/n')
 f.close()
 
 
