@@ -11,6 +11,8 @@ class Citizen:
 authenticate() 메서드의 return self.__resident_id == id_field는 
 __resident_id의 정보를 조회하거나 수정하는것이 아닌 id_filed 변수의 값과 비교해서 동일한지 아닌지 참, 거짓을 확인하는 것일 뿐임.
 """
+class Citizen:
+
     def __init__(self, name, age, resident_id): 
         """이름, 나이, 주민등록번호 """
         self.name = name
