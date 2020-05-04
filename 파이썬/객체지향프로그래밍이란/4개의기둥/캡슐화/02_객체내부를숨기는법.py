@@ -28,4 +28,4 @@ kyusik = Citizen('최규식', 25,'123456')
 # print(kyusik.__resident_id) # AttributeError: 'Citizen' object has no attribute '__resident_id 발생
 # print(kyusik.__age)  # 바로 위와 동일한 오류 발생 
 
-kyusik.__authenticate('123456') # 메소드 없다고 에러남.
+print(kyusik.authenticate('123456') ) # 메소드 없다고 에러남.
