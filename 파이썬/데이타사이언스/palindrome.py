@@ -1,3 +1,4 @@
+# -*- encoding:utf8-*-
 # def is_palindrome(word):
 #     word_list = list(word)
 #     temp=0
