@@ -1,3 +1,5 @@
+# -*- encoding : utf8 -*-
+
 """
 실습과제
 이전에 작성했던 User 클래스를 문서화해봅시다. 문서화 결과에는 아래의 내용이 포함되어야 합니다.
@@ -11,11 +13,11 @@
 """
 
 class User:
-    """ SNS의 유저를 나타내는 클래스"""
+    # """ SNS의 유저를 나타내는 클래스"""
     user_num = 0
 
-    def __init__(self,name,email,pasword):
-     """이름, 이메일, 비밀번호를 인스턴스 변수로 소유 """
+    def __init__(self,name: str, email: str, pasword: float):
+    #  """이름, 이메일, 비밀번호를 인스턴스 변수로 소유 """
         self.name = name
         self.email = email
         self.pasword = pasword
@@ -23,15 +25,19 @@ class User:
         User.user_num +=1
 
     def say_hello(self):
-     """유저의 이름을 포한한 인사 메시지를 출력 """
+    #  """유저의 이름을 포한한 인사 메시지를 출력 """
         print( f'Hello! {self.name}')
     
     def __str__(self):
-    """ 유저 정보를 정의된 문자열 형태로 리턴"""
+    # """ 유저 정보를 정의된 문자열 형태로 리턴"""
         return f'유저: {self.name}, 이메일: {self.email}, 비밀번호: *****'
     
     @classmethod
     def number_of_users(cls):    
-     """총 유저수를 출력하는 메소드 """
+    #  """총 유저수를 출력하는 메소드 """
         print(f'총 유저수" {cls.user_num}')
-help(User)
+
+
+user1 = User('홍길동','hkit@gmail.com',12345)
+
+user1.say_hello()

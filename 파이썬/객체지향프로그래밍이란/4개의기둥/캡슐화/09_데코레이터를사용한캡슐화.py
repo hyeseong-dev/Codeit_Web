@@ -61,6 +61,18 @@ print(young.age) # getter메서드로 출력하는 방법 ()가 없어야함.
 young.age = 30 #age 바로 뒤에 ()붙이면 오류 뜬다. 
 print(young.age)
 
+
+
+
+
+
+
+
+
+
+
+
+
 """
 property 데코레이터 
 변수의 값을 읽거나 설정하는 구문 
