@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+    body {
+        font-size: 16px;
+    }
+    .div1{
+        font-size: 100%;
+    }
+    .div2{
+        font-size: 200%;
+
+    }
+    .div3{
+        font-size: 200%;
+
+    }
+</style>
+</head>
+<body>
+    <div class="div1">
+        div1
+        <div class="div2">
+            div2
+            <div class="div3">
+            div3
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!-- 
+    
+    텍스트의 크기를 나누는 여러 방법
+
+    첫째, 절대적(Absolute)  V.S.    둘째, 상대적(Relative)
+        1.px                             1. em
+        2.pt                             2. %
+
+        절대적!!!
+        만약 24px과 24pt를 비교하면 pt가 조금더 1.3배정도 더 커진것 같음.
+        사실 웹사이트를 만들때는 pt는 잘 사용하지 않음
+
+        상대적!!!
+        %는 부모태그를 기준으로 %가 결정됩니다. div1<-div2<-div3(왼쪽이 부모, 오른쪽이 자식임.)
+
+        em  - 1em은 100% 
+            - 2em은 200%
+            - 1.5em 150%
+    -->
