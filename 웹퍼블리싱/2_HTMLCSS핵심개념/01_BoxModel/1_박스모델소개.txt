@@ -1,0 +1,48 @@
+html에서 내용들은 박스 형태로 존재합니다. 
+
+
+    _______________
+    |             |
+    |   실제내용   |
+    |             |
+    --------------
+
+
+1. padding  : 실제 내용에서 가장 가까운 여백이 
+2. border   : padding -> border -> margin 
+              말 그대로 경계를 의미함. 
+3. margin   : 가장 가장자리 구역. 선이 아닌 면으로 형성된 구역
+
+
+
+규칙. 
+CSS에서 
+        - border : 5px(글자크기), solid(선형태), red(색상);
+        - margin-top:       ?px;
+        - margin-bottom:    ?px;
+        - margin-left:      ?px;
+        - margin-right:     ?px;
+        - padding-top:      ?px;
+        - padding-bottom:   ?px;
+        - padding-left:     ?px;
+        - padding-right:    ?px;
+  
+
+        예를들면, 
+
+        h1 {
+            border: 5px, solid, red;
+            width: 500px        /* 실제 내용의 너비크기를 늘림 */
+            height: 300px       /* 실제 내용의 높이크기를 늘림 */
+        }
+
+        p1 {
+            border: 5px, solid, red;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-left: 50px;
+        }
+
+        p2 {
+            border: 5px, solid, red;
+        }
