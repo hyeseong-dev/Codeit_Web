@@ -1,0 +1,64 @@
+마진과 패딩을 설정하는것에는 몇가지가 존재합니다.
+    _______________
+    |             |
+    |   실제내용   |
+    |             |
+    --------------
+
+
+1. padding  : 실제 내용에서 가장 가까운 여백이 
+2. border   : padding -> border -> margin 
+              말 그대로 경계를 의미함. 
+3. margin   : 가장 가장자리 구역. 선이 아닌 면으로 형성된 구역
+
+
+
+규칙. 
+CSS에서 
+        - border : 5px(글자크기), solid(선형태), red(색상);
+        - margin-top:       ?px;
+        - margin-bottom:    ?px;
+        - margin-left:      ?px;
+        - margin-right:     ?px;
+        - padding-top:      ?px;
+        - padding-bottom:   ?px;
+        - padding-left:     ?px;
+        - padding-right:    ?px;
+  
+
+        예를들면, 
+
+        h1 {
+            border: 5px, solid, red;
+            width: 500px        /* 실제 내용의 너비크기를 늘림 */
+            height: 300px       /* 실제 내용의 높이크기를 늘림 */
+        }
+
+        p1 {
+            border: 5px, solid, red;
+            padding-top: 50px;
+            padding-bottom: 20px;
+            padding-left: 80px;
+            padding-right: 80px;
+
+            padding: 50px 65px 20px 80px /* 시계방향으로 위->오른->아래->왼쪽*/
+            padding: 50px; /* 상하좌우가 50으로 동일한 경우*/
+            padding: 50px 25px; /* 상하 50, 좌우25인 경우*/
+        } 
+        /* 위에 padding 상하좌우로 해서 4줄을 썻지만 한줄로도 가능함*/
+
+        p2 {
+            border: 5px, solid, red;
+            
+        }
+        
+        
+        /* 위에 padding 사용법에 대해 말했다. 
+        margin 역시 사용법은 99%동일하다.
+        그리고 margin-left:auto;
+               margin-right:auto;
+        하게 되면 좌우의 margin 부분이 동일하게 적용되어 가운데 정렬이 됩니다. 
+        만약 위아래 0px두고 좌우 정렬을 하고 싶다면 
+
+        margin : 0 auto;
+        */
